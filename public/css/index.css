@@ -1,0 +1,44 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.surface_book_login {
+    /* Surface Book - login */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #FFFFFF;
+}
+
+.pag {
+    /* pag */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: url(../../assets/img/equipo-de-trabajo-1080x675.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
+.form_login {
+    /* form_login */
+    position: absolute;
+    width: 44%;
+    height: 93%;
+    left: 28%;
+    top: 7%;
+}
+
+.form_login form {
+    /* form */
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: rgba(255, 255, 255, 0.9);
+}
