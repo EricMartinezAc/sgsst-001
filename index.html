@@ -4,16 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/index.css">
+    <link rel="stylesheet" href="./public/css/app.css">
     <title></title>
 </head>
 
 <body class="surface_book_login">
     <main class="pag">
         <div class="form_login">
+            <div id="logo"></div>
+            <div id="slogan"></div>
             <form>
-                <div id="logo"></div>
-                <div id="slogan"></div>
+                <label for="Usuario">Ususario</label>
+                <input type="text" id="Usuario" name="Usuario" value="">
+                <label for="psw">Contraseña</label>
+                <input type="password" name="psw" id="psw">
+                <input type="button" value="Continuar">
+                <div class="line"></div>
             </form>
         </div>
     </main>
