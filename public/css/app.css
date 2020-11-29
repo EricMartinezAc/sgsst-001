@@ -38,3 +38,8 @@ input[type=button] {
     border-radius: 30px;
     font-size: 150%;
 }
+
+a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}

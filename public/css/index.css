@@ -58,7 +58,7 @@ body, html {
     width: 100px;
     height: 100px;
     top: 80px;
-    background: url(../../assets/ico/Logo_integral-riesgo-asesores-logo.png);
+    background: url(../../assets/ico/logo/Logo_integral-riesgo-asesores-logo.png);
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 100px;
@@ -71,7 +71,7 @@ body, html {
     width: 250px;
     height: 60px;
     top: 180px;
-    background: url(../../assets/ico/Logo_integral-riesgo-asesores-slogan.png);
+    background: url(../../assets/ico/logo/Logo_integral-riesgo-asesores-slogan.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -102,6 +102,46 @@ body, html {
     font-size: 150%x;
 }
 
+.form_login .menu_login {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 100%;
+}
+
+.form_login .menu_login .Registrate, .form_login .menu_login .Salir {
+    width: max-content;
+    float: right;
+    padding: 0% 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.form_login .menu_login .Registrate:hover, .form_login .menu_login .Salir:hover {
+    zoom: 120%;
+}
+
+#ico_registrarse, #ico_salir {
+    margin: auto;
+    padding: auto;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ico_salir {
+    background-image: url(../../assets/ico/resources/icono_salir.png);
+}
+
+#ico_registrarse {
+    background-image: url(../../assets/ico/resources/icono_registrarUsuario.png);
+}
+
+.form_login .menu_login .salir {}
+
 @media (max-width:700PX) {
     .pag {
         background: linear-gradient(to right, hsla(216, 78%, 68%, 0.5), #2193b0), url(../../assets/img/decreto1072-1.jpg);
@@ -117,7 +157,7 @@ body, html {
         width: px;
     }
     ::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: inset 0 0 6px rgba(121, 121, 121, 0.3);
         border-radius: 10px;
     }
     ::-webkit-scrollbar-thumb {
@@ -127,12 +167,12 @@ body, html {
     .form_login #logo {
         width: 90px;
         height: 90px;
-        top: 5px;
+        top: 25px;
     }
     .form_login #slogan {
         width: 200px;
         height: 50px;
-        top: 100px;
+        top: 120px;
     }
     .form_login form label {
         color: #FFFFFF;
