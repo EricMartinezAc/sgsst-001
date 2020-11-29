@@ -98,13 +98,8 @@ body, html {
     height: 45px;
 }
 
-.form_login form .line {
-    /* Line 1 */
-    position: relative;
-    width: 600px;
-    height: 0px;
-    top: 50px;
-    border: 2px solid #5450F4;
+.form_login form input[type=password] {
+    font-size: 150%x;
 }
 
 @media (max-width:700PX) {

@@ -20,6 +20,17 @@ input {
     padding-left: 5%;
 }
 
+input:hover {
+    background-color: #CECCEE;
+    position: relative;
+    top: -5px;
+}
+
+input[type=button]:hover {
+    background-color: #7461C3;
+    transform: rotate3d(1);
+}
+
 input[type=button] {
     margin-top: 60px;
     color: #FFFFFF;
