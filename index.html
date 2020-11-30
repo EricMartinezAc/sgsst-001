@@ -13,19 +13,27 @@
 
 <body class="surface_book_login">
     <main class="pag">
-        <div class="form_login">
-            <div class="menu_login">
-                <div class="Salir">
-                    <a href="http://salir" target="_blank" rel="noopener noreferrer">
-                        <div id="ico_salir"></div>
-                        Salir
-                    </a>
-                </div>
-                <div class="Registrate">
-                    <a href="http://registro" target="_blank" rel="noopener noreferrer">
-                        <div id="ico_registrarse"></div>
-                        Registrate
-                    </a>
+        <!--inicio sesion-->
+        <div id="modal_inicioSesion" class="form_login">
+            <div class="menu_sesion">
+                <div class="layout_vertical">
+                    <div class="tittle_sesion">
+                        <h3>INICIO DE SESIÓN</h3>
+                    </div>
+                    <ul class="layout_horizontal">
+                        <li>
+                            <div class="btn_ir_registrate">
+                                <img src="./assets/ico/resources/icono_registrarUsuario.png" alt="" srcset=""
+                                    onclick="mostar_modal(document.getElementById('modal_registroUsuario'))">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn_salir">
+                                <img src="./assets/ico/resources/icono_salir.png" alt="" srcset=""
+                                    onclick="salir_login()">
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div id="logo"></div>
@@ -39,7 +47,40 @@
                 <div class="line"></div>
             </form>
         </div>
+        <!--Registro-->
+        <div id="modal_registroUsuario" class="form_login modal_fade_">
+            <div class="menu_sesion">
+                <div>
+                    <h3>REGISTRO DE USUARIO</h3>
+                </div>
+                <div class="Salir">
+                    <a type="button" onclick="salir_login()">
+                        <div id="ico_salir"></div>
+                    </a>
+                </div>
+                <div class="btn_ir_registrate">
+                    <a type="button" onclick="mostar_modal(document.getElementById('modal_inicioSesion'))">
+                        <div id="ico_registrarse"></div>
+                    </a>
+                </div>
+            </div>
+            <div id="logo"></div>
+            <div id="slogan"></div>
+            <form>
+                <label for="Usuario">Nombre de ususario</label>
+                <input type="text" id="Usuario" name="Usuario" value="">
+                <label for="Cedula">Número de identificación</label>
+                <input type="number" id="Cedula" name="Cedula" value="">
+                <label for="psw">Cree una contraseña</label>
+                <input type="password" name="psw" id="psw">
+                <input type="button" value="Continuar">
+                <div class="line"></div>
+            </form>
+        </div>
     </main>
+
+    <script src="./public/js/index.js"></script>
+    <script src="./public/js/modales.js"></script>
 </body>
 
 </html>

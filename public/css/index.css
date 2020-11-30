@@ -102,49 +102,53 @@ body, html {
     font-size: 150%x;
 }
 
-.form_login .menu_login {
+.form_login .menu_sesion {
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 0px;
     width: 100%;
 }
 
-.form_login .menu_login .Registrate, .form_login .menu_login .Salir {
-    width: max-content;
-    float: right;
-    padding: 0% 15px;
+.form_login .menu_sesion .layout_vertical {
+    margin: 0;
+    padding: 0;
+}
+
+.form_login .menu_sesion .layout_vertical .tittle_sesion {
+}
+
+.form_login .menu_sesion .layout_vertical .layout_horizontal {
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
-.form_login .menu_login .Registrate:hover, .form_login .menu_login .Salir:hover {
-    zoom: 120%;
+.form_login .menu_sesion .layout_vertical .layout_horizontal .btn_ir_registrate, .form_login .menu_sesion .layout_vertical .layout_horizontal .btn_salir {
+    display: block;
+    align-self: auto;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
 }
 
-#ico_registrarse, #ico_salir {
-    margin: auto;
-    padding: auto;
-    width: 20px;
-    height: 20px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.form_login .menu_sesion .layout_vertical .layout_horizontal .btn_ir_registrate img, .form_login .menu_sesion .layout_vertical .layout_horizontal .btn_salir img {
+    position: relative;
+    top: -25px;
+    width: 100%;
+    height: 100%;
 }
 
-#ico_salir {
-    background-image: url(../../assets/ico/resources/icono_salir.png);
+.modal_fade_ {
+    display: none;
 }
 
-#ico_registrarse {
-    background-image: url(../../assets/ico/resources/icono_registrarUsuario.png);
-}
-
-.form_login .menu_login .salir {}
+/*max ancho permitido 213px*/
 
 @media (max-width:700PX) {
     .pag {
-        background: linear-gradient(to right, hsla(216, 78%, 68%, 0.5), #2193b0), url(../../assets/img/decreto1072-1.jpg);
+        /*2193b0*/
+        background: linear-gradient(to right, hsla(216, 78%, 68%, 0.5), #EFE), url(../../assets/img/decreto1072-1.jpg);
     }
     .form_login {
         background-color: transparent;
@@ -167,17 +171,17 @@ body, html {
     .form_login #logo {
         width: 90px;
         height: 90px;
-        top: 25px;
+        top: 105px;
     }
     .form_login #slogan {
         width: 200px;
         height: 50px;
-        top: 120px;
+        top: 200px;
     }
     .form_login form label {
         color: #FFFFFF;
     }
     .form_login form input {
-        color: #5450F4;
+        color: #FFF;
     }
 }
