@@ -23,8 +23,8 @@
                     <ul class="layout_horizontal">
                         <li>
                             <div class="btn_ir_registrate">
-                                <img src="./assets/ico/resources/icono_registrarUsuario.png" alt="" srcset=""
-                                    onclick="mostar_modal(document.getElementById('modal_registroUsuario'))">
+                                <img src="./assets/ico/resources/icono_registrarUsuario.png" alt="" srcset="" onclick="mostar_modal(document.getElementById('modal_registroUsuSesion'),
+                                    document.getElementById('modal_inicioSesion'))">
                             </div>
                         </li>
                         <li>
@@ -48,35 +48,40 @@
             </form>
         </div>
         <!--Registro-->
-        <div id="modal_registroUsuario" class="form_login modal_fade_">
+        <div id="modal_registroUsuSesion" class="form_login">
             <div class="menu_sesion">
-                <div>
-                    <h3>REGISTRO DE USUARIO</h3>
-                </div>
-                <div class="Salir">
-                    <a type="button" onclick="salir_login()">
-                        <div id="ico_salir"></div>
-                    </a>
-                </div>
-                <div class="btn_ir_registrate">
-                    <a type="button" onclick="mostar_modal(document.getElementById('modal_inicioSesion'))">
-                        <div id="ico_registrarse"></div>
-                    </a>
+                <div class="layout_vertical">
+                    <div class="tittle_sesion">
+                        <h3>REGISTRO DE USUARIO</h3>
+                    </div>
+                    <ul class="layout_horizontal">
+                        <li>
+                            <div class="btn_ir_registrate">
+                                <img src="./assets/ico/resources/icono_registrarUsuario.png" alt="" srcset="" onclick="mostar_modal(document.getElementById('modal_registroUsuSesion'),
+                                    document.getElementById('modal_inicioSesion'))">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn_salir">
+                                <img src="./assets/ico/resources/icono_salir.png" alt="" srcset=""
+                                    onclick="salir_login()">
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div id="logo"></div>
             <div id="slogan"></div>
             <form>
-                <label for="Usuario">Nombre de ususario</label>
+                <label for="Usuario">Ususario</label>
                 <input type="text" id="Usuario" name="Usuario" value="">
-                <label for="Cedula">Número de identificación</label>
-                <input type="number" id="Cedula" name="Cedula" value="">
-                <label for="psw">Cree una contraseña</label>
+                <label for="psw">Contraseña</label>
                 <input type="password" name="psw" id="psw">
                 <input type="button" value="Continuar">
                 <div class="line"></div>
             </form>
         </div>
+        <div id="hola"></div>
     </main>
 
     <script src="./public/js/index.js"></script>
